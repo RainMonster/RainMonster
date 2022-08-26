@@ -1,0 +1,38 @@
+#pointer {
+  border: 5px solid black;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 244px;
+  top: 63px;
+  opacity: 0.5;
+}
+
+#cont {
+  overflow: hidden;
+  border: 1px solid gray;
+  width: 30px;
+  height: 150px;
+  z-index: 1;
+  position: absolute;
+  left: 250px;
+}
+
+#cont>div {
+  backgroud: black;
+  border: 1px solid gray;
+  float: left;
+  text-align: center;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  z-index: 0;
+}
+
+#colorBox {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(255,255,255);
+  margin: 10px;
+  border: 5px solid gray;
+}
