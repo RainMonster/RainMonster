@@ -1,1 +1,1 @@
-### A simple color picker usingn a number wheel
+### A simple color picker using a number wheel
