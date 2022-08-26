@@ -65,6 +65,8 @@ function select()
   colorLabel.innerHTML = colorArr;
   spin();
   if (colorArr.length == 3) {
+    clearInterval(intervalId);
+    spinning = false;
     colorBox.style.backgroundColor = "rgb("+colorArr[0]+","+colorArr[1]+","+colorArr[2]+")";
   }
 
