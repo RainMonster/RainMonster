@@ -4,18 +4,33 @@
 	<link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 	<body>
-		<div id="cont">
+		<div id="mainContainer">
+			<div id="introContainer">
+				<p>Welcome to the Aura Color Selector.</p>
+			</div>
+			<div id="btnRow">
+				<button id='start'>Start</button>
+				<button id='select'>Select</button>
+				<button id='reset'>Reset</button>
+			</div>
+			<div id="interactiveContainer">
+				<div id="colorBoxContainer">
+					<div id="colorBox">
+					</div>
+				</div>
+				<div id="wheelContainer">
+					<div id="cont">
+					</div>
+					<div id="pointer">
+					</div>
+				</div>
+			</div>
+			<div id="textContainer">
+				<p id="colorLabel"></p>
+				<p>Click 'Start' button to start wheel spinning.</p>
+				<p>Click 'Select' button three times to create a color.</p>
+				<p>Click 'Reset' button to reset the color.</p>
+			</div>
 		</div>
-		<div id="pointer">
-		</div>
-		<button id='start'>Start</button>
-		<button id='select'>Select</button>
-		<button id='reset'>Reset</button>
-		<div id="colorBox">
-		</div>
-		<p id="colorLabel"></p>
-		<p>Click 'Start' button to start wheel spinning.</p>
-		<p>Click 'Select' button three times to create a color.</p>
-		<p>Click 'Reset' button to reset the color.</p>
 	</body>
 </html>
