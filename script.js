@@ -5,11 +5,11 @@ var colorBox = document.getElementById("colorBox");
 var colorLabel = document.getElementById("colorLabel");
 var max = 255; //max element in meter
 //create items
-for (var i = 1; i <= max; i++)
+for (var i = 0; i <= max; i++)
 {
   var child = document.createElement("div");
   child.innerHTML = i;
-  child.style.top = ((i * 30) -30)+ "px";
+  child.style.top = (i * 30)+ "px";
   child.setAttribute('id', i);
   p.appendChild(child);
 
@@ -17,7 +17,6 @@ for (var i = 1; i <= max; i++)
 //add listeners to buttons
 document.getElementById('start').addEventListener('click', spin);
 document.getElementById('select').addEventListener('click', select);
-// document.getElementById('stop').addEventListener('click', select);
 document.getElementById('reset').addEventListener('click', resetColor);
 //set up interval id so that in future timer can be stopped
 var intervalId=null,randomNum=null;
@@ -36,7 +35,7 @@ function spin()
   {
     var temp = 1;
     //decrease top value of each item by 5px; can by any number to make fast or slow
-    for (var i = 1; i <= max; i++) 
+    for (var i = 0; i <= max; i++) 
     {
       var item = document.getElementById("" + i); //get item by its id 0-max
       var itemTop = (parseInt(item.style.top)); //get item top in integer
@@ -60,7 +59,6 @@ function select()
 {  
   clearInterval(intervalId);
   spinning = false;
-  console.log(curNum);
   colorArr.push(curNum);
   colorLabel.innerHTML = colorArr;
   spin();
